@@ -1,13 +1,20 @@
+# rspec spec './spec/painter_spec.rb'
 require './lib/painter'
 require './lib/paint'
 
 describe Painter do
-  it 'test_it_exists' do
+  xit 'test_it_exists' do
     the_painters_name = "Bob Ross"
     painter = Painter.new(the_painters_name)
 
     expect(painter).to be_a(Painter)
   end
+
+  # it 'test_it_has_a_name1' do
+  #   painter = Painter.new(the_painters_name)
+
+  #   expect(painter.name).to eq("Bob Ross")
+  # end
 
   xit 'test_it_has_a_name1' do
     painter = Painter.new(the_painters_name)
@@ -15,7 +22,7 @@ describe Painter do
     expect(painter.name).to eq("Bob Ross")
   end
 
-  xit 'test_it_has_a_name2' do
+  it 'test_it_has_a_name2' do
     painter = Painter.new("Bob Ross")
 
     expect(@name).to eq("Bob Ross")
